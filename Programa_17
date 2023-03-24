@@ -1,0 +1,31 @@
+##Se desarrolla un juego tirando un dado. Si sa-
+le un número par (2, 4,6) el jugador recibe una
+cantidad igual al número que salió. Si el nú-
+mero es impar, pierde una cantidad igual al
+número que salió. Simular este juego en una
+computadora.
+
+
+import random
+
+saldo = 0
+jugando = True
+
+while jugando:
+    # Tirar el dado
+    numero = random.randint(1, 6)
+    
+    # Determinar si es par o impar y actualizar el saldo
+    if numero % 2 == 0:
+        saldo += numero
+        print("¡Has ganado {}!".format(numero))
+    else:
+        saldo -= numero
+        print("¡Has perdido {}!".format(numero))
+    
+    # Preguntar al jugador si quiere seguir jugando
+    respuesta = input("Tu saldo actual es {}. ¿Quieres seguir jugando? (s/n)".format(saldo))
+    if respuesta.lower() != "s":
+        jugando = False
+
+print("Gracias por jugar. Tu saldo final es {}.".format(saldo))
