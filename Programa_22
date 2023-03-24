@@ -1,0 +1,28 @@
+##Usar las coordenadas de dos puntos en el pla-
+no y calcular la distancia entre ellos, las coor-
+denadas del punto medio y la pendiente del
+segmento de recta.
+
+
+import math
+
+# Pedir las coordenadas de los puntos A y B
+x1 = float(input("Ingrese la coordenada x de A: "))
+y1 = float(input("Ingrese la coordenada y de A: "))
+x2 = float(input("Ingrese la coordenada x de B: "))
+y2 = float(input("Ingrese la coordenada y de B: "))
+
+# Calcular la distancia entre los puntos A y B
+distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+# Calcular las coordenadas del punto medio del segmento AB
+x_medio = (x1 + x2) / 2
+y_medio = (y1 + y2) / 2
+
+# Calcular la pendiente del segmento AB
+pendiente = (y2 - y1) / (x2 - x1)
+
+# Mostrar los resultados
+print("La distancia entre los puntos A y B es:", distancia)
+print("Las coordenadas del punto medio del segmento AB son: ({}, {})".format(x_medio, y_medio))
+print("La pendiente del segmento AB es:", pendiente)
