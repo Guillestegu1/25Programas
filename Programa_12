@@ -1,0 +1,8 @@
+from scipy.stats import binom
+n = 100
+p = 0.001
+k = 1
+
+probabilidad = binom.pmf(k, n, p)
+
+print("La probabilidad de adquirir un perno defectuoso es:", probabilidad)
