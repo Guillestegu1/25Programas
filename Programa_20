@@ -1,0 +1,17 @@
+##Introducir las coordenadas de dos puntos A y
+B en el plano coordenado. Determinar la lon-
+gitud del segmento AB en python
+
+import math
+
+# Pedir las coordenadas de los puntos A y B
+x1 = float(input("Ingrese la coordenada x de A: "))
+y1 = float(input("Ingrese la coordenada y de A: "))
+x2 = float(input("Ingrese la coordenada x de B: "))
+y2 = float(input("Ingrese la coordenada y de B: "))
+
+# Calcular la longitud del segmento AB
+distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+# Mostrar el resultado
+print("La longitud del segmento AB es:", distancia)
