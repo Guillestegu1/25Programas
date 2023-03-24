@@ -1,0 +1,12 @@
+##Simulacion de dos dados
+import random
+
+# Lanzamiento del primer dado
+dado1 = random.randint(1, 6)
+
+# Lanzamiento del segundo dado
+dado2 = random.randint(1, 6)
+
+# Imprimir el resultado de los dos lanzamientos
+print("El primer dado es:", dado1)
+print("El segundo dado es:", dado2)
