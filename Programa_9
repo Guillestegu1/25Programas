@@ -1,0 +1,11 @@
+Determinar de segundo orden de 7, 8, 42, -73.3
+a = 7
+b = 8
+c = 42
+d = -73.3
+
+# Calcula el determinante
+determinante = a*d - b*c
+
+# Imprime el determinante
+print("El determinante es:", determinante)
