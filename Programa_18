@@ -1,0 +1,14 @@
+##Hanoi
+
+def hanoi(n, A, B, C):
+    if n == 1:
+        print(f"Mover disco {n} de {A} a {C}")
+        return 1
+    else:
+        moves = hanoi(n-1, A, C, B) + 1 + hanoi(n-1, B, A, C)
+        print(f"Mover disco {n} de {A} a {C}")
+        return moves
+
+n = 20
+moves = hanoi(n, 'A', 'B', 'C')
+print(f"Se necesitan {moves} movimientos para transferir {n} discos de una estaca a otra.")
