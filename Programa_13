@@ -1,0 +1,25 @@
+##Se tiran dos dados hasta que aparezca un 3 0
+un 7. ¿Durante qué porcentaje de veces saldra
+un 3 antes de aparecer un 7?
+
+import random
+
+n_experimentos = 100000
+contador_3 = 0
+contador_7 = 0
+
+for i in range(n_experimentos):
+    while True:
+        dado1 = random.randint(1, 6)
+        dado2 = random.randint(1, 6)
+        suma = dado1 + dado2
+        
+        if suma == 3:
+            contador_3 += 1
+            break
+        elif suma == 7:
+            contador_7 += 1
+            break
+
+porcentaje_3 = contador_3 / n_experimentos * 100
+print("El porcentaje de veces que sale un 3 antes de un 7 es:", porcentaje_3, "%")
