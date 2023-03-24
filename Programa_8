@@ -1,0 +1,12 @@
+Determinante de una matriz 2x2
+a = int(input("Ingresa un numero: "))
+b = int(input("Ingresa un numero: "))
+c = int(input("Ingresa un numero: "))
+d = int(input("Ingresa un numero: "))
+matriz = [[a, b], [c, d]]
+
+# Calcula el determinante
+determinante = matriz[0][0]*matriz[1][1] - matriz[0][1]*matriz[1][0]
+
+# Imprime el determinante
+print("El determinante es:", determinante)
