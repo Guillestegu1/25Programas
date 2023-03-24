@@ -1,0 +1,16 @@
+##Introducir las coordenadas de dos puntos A y
+B en el plano coordenado. Encontrar las coor-
+denadas del punto medio del segmento AB.
+
+# Pedir las coordenadas de los puntos A y B
+x1 = float(input("Ingrese la coordenada x de A: "))
+y1 = float(input("Ingrese la coordenada y de A: "))
+x2 = float(input("Ingrese la coordenada x de B: "))
+y2 = float(input("Ingrese la coordenada y de B: "))
+
+# Calcular las coordenadas del punto medio del segmento AB
+x_medio = (x1 + x2) / 2
+y_medio = (y1 + y2) / 2
+
+# Mostrar el resultado
+print("Las coordenadas del punto medio del segmento AB son: ({}, {})".format(x_medio, y_medio))
