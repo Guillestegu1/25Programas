@@ -1,3 +1,8 @@
+##Una compañía fabrica pernos. Se sabe que
+uno en 1,000 es defectuoso. Usted compra una
+Caja con 100 pernos. ¿Cuál es la probabilidad
+de que adquiera uno defectuoso?
+
 from scipy.stats import binom
 n = 100
 p = 0.001
