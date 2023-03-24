@@ -1,0 +1,27 @@
+##Un rompecabezas popular, llamado “Locura
+Instantánea”, consiste de 4 bloques cuyas ca-
+ras tienen diferentes colores: rojo, azul, blan-
+co y verde. Ninguno de los bloques tiene la
+misma distribución en cuanto a caras colorea-
+das. El objeto es colocar las caras en una
+forma tal que ninguna pareja de ellas en el
+frente, arriba, atrás o abajo sean del mismo
+color
+
+import itertools
+
+# Definir los colores disponibles
+colores = ['rojo', 'azul', 'blanco', 'verde']
+
+# Generar todas las posibles combinaciones de colores para los cuatro bloques
+combinaciones = itertools.product(colores, repeat=4)
+
+# Iterar sobre cada combinación y verificar si cumple con las restricciones
+for combinacion in combinaciones:
+    bloque1, bloque2, bloque3, bloque4 = combinacion
+    
+    if (bloque1 != bloque2 and bloque1 != bloque3 and bloque1 != bloque4 and
+        bloque2 != bloque3 and bloque2 != bloque4 and
+        bloque3 != bloque4 and
+        bloque1 != bloque2 != bloque3 != bloque4):
+        print(combinacion)
