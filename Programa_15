@@ -1,0 +1,15 @@
+##Con las monedas siguientes: medio dólar,
+cuarto, diez, cinco y un centavo ¿de cuántas
+maneras diferentes se les puede cambiar por
+un dolar?
+
+monedas = [50, 25, 10, 5, 1]
+objetivo = 100
+cambios = [0] * (objetivo + 1)
+cambios[0] = 1
+
+for m in monedas:
+    for i in range(m, objetivo + 1):
+        cambios[i] += cambios[i - m]
+
+print("El número de formas diferentes de cambiar un dólar es:", cambios[objetivo])
