@@ -1,0 +1,14 @@
+import math
+list= [30, 45, 60, 90]
+a=math.sin(list[0])
+b=math.cos(list[0])
+c=math.sin(list[1])
+d=math.cos(list[1])
+e=math.sin(list[2])
+f=math.cos(list[2])
+g=math.sin(list[3])
+h=math.cos(list[3])
+lista = [a,c,e, g]
+lista1= [b,d,f,h]
+print("Valores de Seno: ", lista)
+print("valores de coseno: ", lista1)
