@@ -1,0 +1,8 @@
+##El radio de la tierra es de alrededor de 7,400 km. calcular la circunferencia de la tierra en python
+
+import math
+
+radio_tierra = 7400  # en kilómetros
+circunferencia_tierra = 2 * math.pi * radio_tierra
+
+print("La circunferencia de la Tierra es de aproximadamente", round(circunferencia_tierra, 2), "kilómetros.")
