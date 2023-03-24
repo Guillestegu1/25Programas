@@ -2,11 +2,11 @@
 
 def hanoi(n, A, B, C):
     if n == 1:
-        print(f"Mover disco {n} de {A} a {C}")
+        ##print(f"Mover disco {n} de {A} a {C}") para ver los movimientos en vivo
         return 1
     else:
         moves = hanoi(n-1, A, C, B) + 1 + hanoi(n-1, B, A, C)
-        print(f"Mover disco {n} de {A} a {C}")
+        ##print(f"Mover disco {n} de {A} a {C}") para ver los movimientos en vivo
         return moves
 
 n = 20
