@@ -1,0 +1,17 @@
+##Dadas las coordenadas de tres puntos en el
+plano XY, determinar si son colineales.
+
+# Coordenadas de los tres puntos
+p1 = (0, 0)
+p2 = (2, 2)
+p3 = (4, 4)
+
+# Cálculo de las pendientes
+m1 = (p2[1]-p1[1]) / (p2[0]-p1[0])
+m2 = (p3[1]-p2[1]) / (p3[0]-p2[0])
+
+# Comprobación de si son colineales
+if m1 == m2:
+    print("Los tres puntos son colineales.")
+else:
+    print("Los tres puntos no son colineales.")
