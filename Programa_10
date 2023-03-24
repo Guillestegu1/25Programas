@@ -1,0 +1,21 @@
+tres lados A, B y C, de un triangulo, encontrar los tres ángulos a, b y c. Suponer que todos los ángulos son agudos
+import math
+
+# Definir los lados A, B y C
+A = 3
+B = 4
+C = 5
+
+# Calcular los ángulos a, b y c
+cos_a = (B**2 + C**2 - A**2) / (2*B*C)
+cos_b = (A**2 + C**2 - B**2) / (2*A*C)
+cos_c = (A**2 + B**2 - C**2) / (2*A*B)
+a = math.degrees(math.acos(cos_a))
+b = math.degrees(math.acos(cos_b))
+c = math.degrees(math.acos(cos_c))
+
+# Imprimir los ángulos
+print("Los ángulos del triángulo son:")
+print("a =", a)
+print("b =", b)
+print("c =", c)
