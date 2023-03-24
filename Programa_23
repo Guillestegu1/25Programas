@@ -1,0 +1,22 @@
+##Dadas las coordenadas de cuatro puntos en
+el plano XY, decidir si el cuadrilátero formado
+por la unión de los puntos ordenadamente es
+un paralelogramo.
+
+# Coordenadas de los cuatro puntos
+p1 = (0, 0)
+p2 = (2, 0)
+p3 = (3, 2)
+p4 = (1, 2)
+
+# Distancias entre los cuatro puntos
+d1 = ((p1[0]-p2[0])**2 + (p1[1]-p2[1])**2)**0.5
+d2 = ((p2[0]-p3[0])**2 + (p2[1]-p3[1])**2)**0.5
+d3 = ((p3[0]-p4[0])**2 + (p3[1]-p4[1])**2)**0.5
+d4 = ((p4[0]-p1[0])**2 + (p4[1]-p1[1])**2)**0.5
+
+# Comprobación de las condiciones para ser un paralelogramo
+if d1 == d3 and d2 == d4:
+    print("El cuadrilátero es un paralelogramo.")
+else:
+    print("El cuadrilátero no es un paralelogramo.")
